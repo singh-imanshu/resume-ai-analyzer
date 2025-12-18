@@ -34,6 +34,6 @@ public class ResumeAnalysisResponse {
     /** The AI's confidence in its own evaluation (HIGH, MEDIUM, LOW). */
     private String analysisConfidence;
 
-    /** The AI's confidence in its own evaluation (HIGH, MEDIUM, LOW). */
+    /** A calculated integer score (0-100) indicating the fit for the role. */
     private int jobFitScore;
 }
