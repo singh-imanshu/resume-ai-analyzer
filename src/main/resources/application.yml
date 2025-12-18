@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: resume-ai-analyzer
+
+  ai:
+    retry:
+      max-attempts: 3
+      backoff:
+        initial-interval: 4000ms
+        multiplier: 3
+        max-interval: 60000ms
+      on-client-errors: true
+
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          options:
+            model: gemini-2.5-flash
+            temperature: 0.7
